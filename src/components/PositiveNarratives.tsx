@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Card, CardHeader, CardTitle, CardFooter } from './ui/card'
 import { Loader2, TrendingUpIcon } from 'lucide-react'
-import axios from "@/lib/axios"
+// import axios from "@/lib/axios"
 import DefaultPayload from "@/types/DefaultPayload"
 
 
@@ -16,8 +16,8 @@ function PositiveNarratives({ payload }: PositiveNarrativesProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.post("/datacleaner/native_data/", payload)
-        setNarratives(response.data)
+        // const response = await axios.post("/datacleaner/native_data/", payload)
+        setNarratives(8532)
         setLoading(false)
       } catch (e) {
         console.error(e)

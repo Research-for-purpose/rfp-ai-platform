@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Card, CardTitle, CardFooter, CardHeader } from './ui/card'
 import { Loader2, TrendingDownIcon } from 'lucide-react'
 import DefaultPayload from "@/types/DefaultPayload"
-import axios from "@/lib/axios"
+// import axios from "@/lib/axios"
 
 interface MisleadingNarrativesProps {
   payload: DefaultPayload
@@ -15,8 +15,8 @@ function MisleadingNarratives({ payload }: MisleadingNarrativesProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.post("/datacleaner/misleading_data/", payload)
-        setMisleadingInfo(response.data)
+        // const response = await axios.post("/datacleaner/misleading_data/", payload)
+        setMisleadingInfo(3653)
         setLoading(false)
       } catch (e) {
         console.error(e)
